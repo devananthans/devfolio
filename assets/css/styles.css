@@ -2,7 +2,7 @@
     --color-primary: #1d1616;
     --color-secondary: #8e1616;
     --color-tertiary: #d84040;
-    --color-accent: #d84040;
+    --color-accent: #f5deb3;
     --color-accent-hover: #c23939;
     --color-light: #eeeeee;
     --color-dark: #000000;
@@ -105,7 +105,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-light);
     border-radius: 50%;
     transition: all 0.3s;
     text-decoration: none;
@@ -119,7 +119,7 @@ nav {
 .social-icons svg {
     width: 24px;
     height: 24px;
-    fill: var(--color-light);
+    fill: var(--color-primary);
 }
 
 .cta-buttons {
@@ -147,7 +147,7 @@ nav {
 
 .btn-outline:hover {
     background: var(--color-accent);
-    color: var(--color-light);
+    color: var(--color-primary);
 }
 
 .btn-gradient {
@@ -246,6 +246,11 @@ section {
     font-size: 36px;
     margin-bottom: 20px;
     color: var(--color-accent);
+}
+.about-content p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25.6px;
 }
 
 .about-img {
