@@ -43,7 +43,7 @@ nav {
     color: var(--color-accent);
 }
 
-.logo  a{
+.logo a {
     text-decoration: none;
     color: var(--color-accent);
 }
@@ -183,9 +183,17 @@ nav {
     border-radius: 50%;
 }
 
-.window-control.red { background: #ff5f56; }
-.window-control.yellow { background: #ffbd2e; }
-.window-control.green { background: #27c93f; }
+.window-control.red {
+    background: #ff5f56;
+}
+
+.window-control.yellow {
+    background: #ffbd2e;
+}
+
+.window-control.green {
+    background: #27c93f;
+}
 
 .code-content {
     font-family: 'Courier New', monospace;
@@ -198,17 +206,49 @@ nav {
     padding-left: 20px;
 }
 
-.keyword { color: #ff006e; }
-.variable { color: #00d4ff; }
-.string { color: #ffd60a; }
-.property { color: #00ff88; }
-.boolean { color: #ff006e; }
-.function { color: #00ff88; }
-.this { color: #00d4ff; }
-.operator { color: white; }
-.number { color: #ffd60a; }
-.comment { color: #6a9955; }
-.tag { color: #ff79c6; }
+.keyword {
+    color: #ff006e;
+}
+
+.variable {
+    color: #00d4ff;
+}
+
+.string {
+    color: #ffd60a;
+}
+
+.property {
+    color: #00ff88;
+}
+
+.boolean {
+    color: #ff006e;
+}
+
+.function {
+    color: #00ff88;
+}
+
+.this {
+    color: #00d4ff;
+}
+
+.operator {
+    color: white;
+}
+
+.number {
+    color: #ffd60a;
+}
+
+.comment {
+    color: #6a9955;
+}
+
+.tag {
+    color: #ff79c6;
+}
 
 section {
     padding: 100px 80px;
@@ -247,6 +287,7 @@ section {
     margin-bottom: 20px;
     color: var(--color-accent);
 }
+
 .about-content p {
     font-size: 16px;
     text-align: justify;
@@ -311,6 +352,29 @@ section {
     font-weight: 500;
 }
 
+/* Projects view page */
+.my-projects{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+}
+.my-projects h2{
+    text-align: center;
+    font-size: 56px;
+    color: var(--color-accent);
+}
+
+.my-projects p{
+    max-width: 800px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-light);
+}
+
+/* Projects single page */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
