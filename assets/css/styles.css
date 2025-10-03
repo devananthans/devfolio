@@ -353,7 +353,7 @@ section {
 }
 
 /* Projects view page */
-.my-projects{
+.my-projects {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
@@ -361,13 +361,14 @@ section {
     margin: 0;
     gap: 20px;
 }
-.my-projects h2{
+
+.my-projects h2 {
     text-align: center;
     font-size: 56px;
     color: var(--color-accent);
 }
 
-.my-projects p{
+.my-projects p {
     max-width: 800px;
     text-align: center;
     font-size: 16px;
@@ -637,12 +638,13 @@ footer {
 
 @media (max-width: 968px) {
     nav {
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
 
     .hero-container {
-        grid-template-columns: 1fr;
-        padding: 120px 40px 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 150px 20px 60px;
     }
 
     .hero-content h1 {
@@ -691,6 +693,24 @@ footer {
 
     #project-hero {
         padding: 100px 20px 40px;
+    }
+
+    .btn-outline {
+        text-align: center;
+    }
+
+    .btn-gradient {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
     }
 }
 
