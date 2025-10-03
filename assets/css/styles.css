@@ -648,7 +648,7 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 42px;
+        font-size: 40px !important;
     }
 
     .code-window {
@@ -711,6 +711,11 @@ footer {
     .about-content h2 {
         font-size: 28px;
         margin-bottom: 18px;
+    }
+
+    .social-icons svg {
+        width: 20px;
+        height: 20px;
     }
 }
 
