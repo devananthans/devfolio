@@ -105,6 +105,42 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    /* keeps grid inside the hero section */
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+    height: max-content;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    /* grid spacing */
+    z-index: 0;
+    animation: gridMove 10s linear infinite;
+}
+
+@keyframes gridMove {
+    from {
+        background-position: 0 0, 0 0;
+    }
+
+    to {
+        background-position: 40px 40px, 40px 40px;
+    }
+}
+
+.hero-container,
+.code-window {
+    position: relative;
+    z-index: 1;
+}
 
 .hero-container {
     display: grid;
@@ -132,7 +168,7 @@ nav {
 
 .hero-content h1 .highlight-cyan::after {
     content: '|';
-    animation: blink 1s infinite;
+    animation: blink 5s infinite;
     margin-left: 2px;
 }
 
@@ -337,6 +373,7 @@ section {
     background: var(--color-tertiary);
 }
 
+/*Home Page About Us section */
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -642,6 +679,11 @@ footer {
     border-top: 1px solid var(--color-accent);
 }
 
+footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .mt-4 {
     margin-top: 1.5rem;
 }
@@ -742,7 +784,37 @@ footer {
     }
 
     .menu-toggle {
+        width: 35px;
+        height: 30px;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1000;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: var(--color-accent);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* When menu is active (to show X) */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
     }
 
     .nav-links {
