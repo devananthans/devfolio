@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
 }
 
+/* Fixed Navbar Styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -33,14 +34,16 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(29, 22, 22, 0.9);
+    background: rgba(29, 22, 22, 0.95);
     backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
     font-size: 32px;
     font-weight: bold;
     color: var(--color-accent);
+    z-index: 1001;
 }
 
 .logo a {
@@ -52,6 +55,7 @@ nav {
     display: flex;
     gap: 40px;
     list-style: none;
+    transition: transform 0.3s ease;
 }
 
 .nav-links a {
@@ -68,6 +72,39 @@ nav {
 .nav-links a:hover {
     color: var(--color-accent);
 }
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--color-accent);
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 
 .hero-container {
     display: grid;
@@ -636,10 +673,14 @@ footer {
     margin-right: 10px;
 }
 
+
+/* Responsive Styles */
+
 @media (max-width: 968px) {
     nav {
-        padding: 20px 20px;
+        padding: 20px 40px;
     }
+
 
     .hero-container {
         display: flex;
@@ -670,9 +711,57 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 30px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
     .nav-links {
-        display: none;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: rgba(29, 22, 22, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+        padding: 30px 0;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(245, 222, 179, 0.1);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
     }
 
     .hero-content h1 {
