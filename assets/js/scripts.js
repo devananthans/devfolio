@@ -89,3 +89,4 @@ function showAlert(message, type) {
         alertBox.style.display = 'none';
     }, 5000);
 }
+

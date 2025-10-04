@@ -130,6 +130,31 @@ nav {
     color: var(--color-accent);
 }
 
+.hero-content h1 .highlight-cyan::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.fa-brands,
+.fab {
+    font-size: 20px;
+    color: #000000;
+}
+
 .social-icons {
     display: flex;
     gap: 20px;
@@ -802,10 +827,6 @@ footer {
         margin-bottom: 18px;
     }
 
-    .social-icons svg {
-        width: 20px;
-        height: 20px;
-    }
 }
 
 html {
