@@ -24,10 +24,11 @@
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#education">EDUCATION</a></li>
             <li><a href="#blogs">BLOGS</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="projects.php">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
+
     <div class="hero-section">
         <div class="hero-container">
             <div class="hero-content">
@@ -37,19 +38,24 @@
                     Professional <br><span class="highlight-cyan"></span>
                 </h1>
                 <div class="social-icons">
-                    <a href="https://github.com/devananthans" aria-label="GitHub">
+                    <a href="https://github.com/devananthans" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/devananthans" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/devananthans" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.reddit.com/user/s_deva_official/" aria-label="Reddit">
+                    <a href="https://www.reddit.com/user/s_deva_official/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Reddit">
                         <i class="fab fa-reddit"></i>
                     </a>
-                    <a href="https://medium.com/@devananthans" aria-label="Medium">
+                    <a href="https://medium.com/@devananthans" target="_blank" rel="noopener noreferrer"
+                        aria-label="Medium">
                         <i class="fab fa-medium"></i>
                     </a>
                 </div>
+
 
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-outline">CONTACT ME</a>
@@ -381,22 +387,24 @@
                 </div>
 
                 <div class="social-icons">
-                    <a href="https://github.com/devananthans" aria-label="GitHub">
+                    <a href="https://github.com/devananthans" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/devananthans" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/devananthans" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.reddit.com/user/s_deva_official/" aria-label="Reddit">
+                    <a href="https://www.reddit.com/user/s_deva_official/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Reddit">
                         <i class="fab fa-reddit"></i>
                     </a>
-                    <!-- <a href="#" aria-label="Dribbble">
-                        <i class="fab fa-dribbble"></i>
-                    </a> -->
-                    <a href="https://medium.com/@devananthans" aria-label="Medium">
+                    <a href="https://medium.com/@devananthans" target="_blank" rel="noopener noreferrer"
+                        aria-label="Medium">
                         <i class="fab fa-medium"></i>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
