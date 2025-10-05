@@ -24,7 +24,7 @@
             <li><a href="index.html#skills">SKILLS</a></li>
             <li><a href="index.html#education">EDUCATION</a></li>
             <li><a href="index.html#blogs">BLOGS</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="projects.php">PROJECTS</a></li>
             <li><a href="index.html#contact">CONTACT</a></li>
         </ul>
     </nav>
