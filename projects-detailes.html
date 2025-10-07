@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Powered Financial App - Dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="/">Devfolio</a></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#experience">EXPERIENCE</a></li>
+            <li><a href="index.html#skills">SKILLS</a></li>
+            <li><a href="index.html#education">EDUCATION</a></li>
+            <li><a href="index.html#blogs">BLOGS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-container" id="project-hero">
+        <div class="hero-content">
+            <h1>
+                AI Powered <br>
+                <span class="highlight-pink">Financial App</span><br>
+                Project Details
+            </h1>
+            <p>AI/ML-powered financial model trained on data from Google Sheets and generates PDF reports. A
+                full-stack application designed for efficient financial analysis and reporting.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-gradient">Live Demo</a>
+                <a href="#" class="btn btn-outline">View Code</a>
+            </div>
+        </div>
+
+        <div class="code-window">
+            <div class="window-controls">
+                <div class="window-control red"></div>
+                <div class="window-control yellow"></div>
+                <div class="window-control green"></div>
+            </div>
+            <div class="code-content">
+                <span class="code-line"><span class="keyword">const</span> <span class="variable">AI</span> <span
+                        class="operator">=</span> <span class="string">'Financial App'</span>;</span>
+                <span class="code-line"><span class="comment">// Full-stack Financial App API with
+                        AI/ML</span></span>
+                <span class="code-line"><span class="function">trainModel</span>(dataFromSheets);</span>
+                <span class="code-line"><span class="function">generatePDF</span>(reports);</span>
+                <span class="code-line"><span class="function">analyzeData</span>(<span
+                        class="property">financialMetrics</span>);</span>
+                <span class="code-line"><span class="function">exportReport</span>(<span
+                        class="string">'PDF'</span>);</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Overview Section -->
+    <section id="overview">
+        <h2 class="section-title">Project Overview</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <p>This full-stack financial application leverages AI and machine learning to process data from
+                    Google Sheets, perform predictive analysis, and automatically generate comprehensive PDF
+                    reports. It's built for businesses needing quick insights into financial trends and forecasting.
+                </p>
+                <h2>Key Features</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Data ingestion from Google Sheets API</li>
+                    <li><i class="fas fa-check-circle"></i> AI/ML model training for financial predictions</li>
+                    <li><i class="fas fa-check-circle"></i> Automated PDF report generation with charts</li>
+                    <li><i class="fas fa-check-circle"></i> Secure user authentication and dashboard</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time data visualization using React</li>
+                </ul>
+            </div>
+            <img src="https://thumbs.dreamstime.com/b/coding-software-developer-work-augmented-reality-dashboard-computer-icons-coding-software-developer-work-augmented-122745638.jpg"
+                alt="Financial App Dashboard" class="about-img">
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies">
+        <h2 class="section-title">Technologies Used</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <p>React.js</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-python"></i>
+                <p>Python (AI/ML)</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <p>MongoDB</p>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-google"></i>
+                <p>Google Sheets API</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-file-pdf"></i>
+                <p>PDF Generation</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-chart-line"></i>
+                <p>Chart.js</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" style="background: rgba(142, 22, 22, 0.1);">
+        <h2 class="section-title">Challenges & Solutions</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <i class="fas fa-exclamation-triangle exp-icon"></i>
+                <h3>Challenge: Integrating Google Sheets API</h3>
+                <p>Handling real-time data pulls and authentication issues with varying sheet permissions.</p>
+            </div>
+            <div class="exp-card">
+                <i class="fas fa-lightbulb exp-icon"></i>
+                <h3>Solution: OAuth & Error Handling</h3>
+                <p>Implemented robust OAuth flows and fallback mechanisms for data sync failures.</p>
+            </div>
+            <div class="exp-card">
+                <i class="fas fa-brain exp-icon"></i>
+                <h3>Challenge: AI Model Training Efficiency</h3>
+                <p>Training ML models on large datasets without excessive compute time.</p>
+            </div>
+            <div class="exp-card">
+                <i class="fas fa-rocket exp-icon"></i>
+                <h3>Solution: Optimized Python Scripts</h3>
+                <p>Used TensorFlow Lite for lighter models and scheduled batch processing.</p>
+            </div>
+            <div class="exp-card">
+                <i class="fas fa-file-export exp-icon"></i>
+                <h3>Challenge: PDF Report Customization</h3>
+                <p>Generating dynamic, branded PDFs with embedded charts.</p>
+            </div>
+            <div class="exp-card">
+                <i class="fas fa-tools exp-icon"></i>
+                <h3>Solution: Puppeteer Integration</h3>
+                <p>Leveraged Puppeteer for HTML-to-PDF conversion with custom styling.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Developed by Deva. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
