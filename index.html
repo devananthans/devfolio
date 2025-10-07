@@ -275,23 +275,65 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-grid">
-            <div class="edu-card">
-                <i class="fas fa-graduation-cap edu-icon"></i>
-                <h3>Bachelor Degree</h3>
-                <p>2020 - University</p>
+    <section class="my-skill">
+        <div class="container">
+            <div class="section-head">
+                <div class="section-sub-title">
+                    <span class="subtitle theme-gradient">My Skill</span>
+                </div>
+                <h2 class="title">Elevated Designs Personalized <br> the best Experiences</h2>
             </div>
-            <div class="edu-card">
-                <i class="fas fa-school edu-icon"></i>
-                <h3>Higher Secondary</h3>
-                <p>2018</p>
-            </div>
-            <div class="edu-card">
-                <i class="fas fa-certificate edu-icon"></i>
-                <h3>Secondary School Certificate</h3>
-                <p>2016</p>
+
+            <div class="services-widget">
+                <div class="service-item" data-index="0">
+                    <div class="my-skill-card">
+                        <div class="card-icon">
+                            <i class="fa-light fa-building-columns"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3 class="main-title">Ui/Visual Design</h3>
+                            <p class="sub-title">21 Done</p>
+                        </div>
+                        <p class="card-para">My work is driven by the belief that thoughtful design and strategic
+                            planning can empower brands strategic planning can empower brands</p>
+                        <a href="#" class="read-more-btn">Read More <span class="read-more-icon"><i
+                                    class="fa-solid fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+
+                <div class="service-item" data-index="1">
+                    <div class="my-skill-card">
+                        <div class="card-icon">
+                            <i class="fa-light fa-calendar"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3 class="main-title">Ui/Visual Design</h3>
+                            <p class="sub-title">21 Done</p>
+                        </div>
+                        <p class="card-para">In this portfolio, you'll find a curated selection of projects that
+                            highlight my skills in [Main Areas, e.g., responsive web design</p>
+                        <a href="#" class="read-more-btn">Read More <span class="read-more-icon"><i
+                                    class="fa-solid fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+
+                <div class="service-item" data-index="2">
+                    <div class="my-skill-card">
+                        <div class="card-icon">
+                            <i class="fa-light fa-pen-nib"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3 class="main-title">Motion Design</h3>
+                            <p class="sub-title">20 Done</p>
+                        </div>
+                        <p class="card-para">Each project here showcases my commitment to excellence and adaptability,
+                            tailored to meet each client's unique needs</p>
+                        <a href="#" class="read-more-btn">Read More <span class="read-more-icon"><i
+                                    class="fa-solid fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+
+                <div class="active-bg"></div>
             </div>
         </div>
     </section>
@@ -450,6 +492,44 @@
         document.addEventListener("DOMContentLoaded", () => {
             if (textArray.length) setTimeout(type, 500);
         });
+
+        const servicesWidget = document.querySelector('.services-widget');
+        const activeBg = document.querySelector('.active-bg');
+        const serviceItems = document.querySelectorAll('.service-item');
+
+        function updateGradientPosition() {
+            const widgetRect = servicesWidget.getBoundingClientRect();
+            const widgetTop = widgetRect.top;
+            const widgetHeight = widgetRect.height;
+            const viewportCenter = window.innerHeight / 2;
+
+            // Calculate which card should be active based on scroll position
+            serviceItems.forEach((item, index) => {
+                const itemRect = item.getBoundingClientRect();
+                const itemCenter = itemRect.top + itemRect.height / 2;
+
+                // Check if this item's center is closest to viewport center
+                const distanceToCenter = Math.abs(itemCenter - viewportCenter);
+
+                if (distanceToCenter < itemRect.height) {
+                    // Move gradient to this card
+                    const cardHeight = item.querySelector('.my-skill-card').offsetHeight;
+                    const gap = 20;
+                    const topPosition = index * (cardHeight + gap);
+                    activeBg.style.top = topPosition + 'px';
+                    activeBg.style.height = cardHeight + 'px';
+                }
+            });
+        }
+
+        // Update on scroll
+        window.addEventListener('scroll', updateGradientPosition);
+
+        // Update on load
+        window.addEventListener('load', updateGradientPosition);
+
+        // Initial call
+        updateGradientPosition();
     </script>
 
 </body>
