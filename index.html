@@ -123,27 +123,141 @@
         </div>
     </section>
 
-    <!-- Experience Section-->
-    <section id="experience" style="background: rgba(142, 22, 22, 0.1);">
-        <h2 class="section-title">Experiences</h2>
-        <div class="experience-grid">
-            <div class="exp-card">
-                <i class="fas fa-briefcase exp-icon"></i>
-                <h3>Software Engineer I</h3>
-                <p>Telenor Ltd | 2023 - Present</p>
+    <div class="experience-section">
+        <div class="section-header">
+            <h2 class="section-title">Experiences</h2>
+            <p class="section-subtitle">My professional journey and accomplishments</p>
+        </div>
+
+        <div class="exp-container">
+            <!-- Professional Image Side -->
+            <div class="image-side">
+                <div class="image-wrapper">
+                    <div class="decorative-box decorative-box-1"></div>
+                    <div class="decorative-box decorative-box-2"></div>
+                    <div class="image-container">
+                        <div class="image-border"></div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=1000&fit=crop"
+                            alt="Professional Team Working" class="experience-image" />
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
             </div>
-            <div class="exp-card">
-                <i class="fas fa-laptop-code exp-icon"></i>
-                <h3>Fullstack</h3>
-                <p>Self Employed | 2019 - Present</p>
-            </div>
-            <div class="exp-card">
-                <i class="fas fa-code exp-icon"></i>
-                <h3>Code and build everyday</h3>
-                <p>Self Employed</p>
+
+            <!-- Professional Accordion Side -->
+            <div class="accordion-side">
+                <div class="accordion">
+                    <!-- Experience 1 -->
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <div class="header-left">
+                                <h3 class="role-title">Senior Software Engineer</h3>
+                                <div class="company-info">
+                                    <span class="company-name">Tech Corp Inc.</span>
+                                    <span class="date-range">Jan 2021 - Present</span>
+                                </div>
+                            </div>
+                            <div class="accordion-arrow">▼</div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-inner">
+                                <p class="description">
+                                    Leading development of enterprise-level applications with a focus on scalability,
+                                    performance, and user experience. Collaborating with cross-functional teams to
+                                    deliver innovative solutions.
+                                </p>
+                                <ul class="responsibilities">
+                                    <li>Architected and implemented microservices infrastructure serving 2M+ users</li>
+                                    <li>Led team of 5 developers through agile development cycles</li>
+                                    <li>Reduced application load time by 60% through optimization</li>
+                                    <li>Mentored junior developers and conducted code reviews</li>
+                                </ul>
+                                <div class="tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">AWS</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="header-left">
+                                <h3 class="role-title">Full Stack Developer</h3>
+                                <div class="company-info">
+                                    <span class="company-name">Digital Solutions Ltd.</span>
+                                    <span class="date-range">Mar 2019 - Dec 2020</span>
+                                </div>
+                            </div>
+                            <div class="accordion-arrow">▼</div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-inner">
+                                <p class="description">
+                                    Developed and maintained full-stack web applications using modern technologies.
+                                    Implemented RESTful APIs and responsive user interfaces for diverse client projects.
+                                </p>
+                                <ul class="responsibilities">
+                                    <li>Built 15+ client projects from concept to deployment</li>
+                                    <li>Integrated third-party APIs and payment gateways</li>
+                                    <li>Implemented automated testing achieving 85% code coverage</li>
+                                    <li>Collaborated with designers to create pixel-perfect interfaces</li>
+                                </ul>
+                                <div class="tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">MongoDB</span>
+                                    <span class="tag">Express</span>
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">REST API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <div class="header-left">
+                                <h3 class="role-title">Frontend Developer</h3>
+                                <div class="company-info">
+                                    <span class="company-name">Creative Agency</span>
+                                    <span class="date-range">Jun 2017 - Feb 2019</span>
+                                </div>
+                            </div>
+                            <div class="accordion-arrow">▼</div>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="content-inner">
+                                <p class="description">
+                                    Started my professional journey building responsive websites and learning modern web
+                                    development practices. Gained hands-on experience with HTML, CSS, and JavaScript
+                                    frameworks.
+                                </p>
+                                <ul class="responsibilities">
+                                    <li>Developed responsive websites for 20+ clients</li>
+                                    <li>Converted design mockups into functional interfaces</li>
+                                    <li>Optimized websites for SEO and performance</li>
+                                    <li>Participated in daily standups and sprint planning</li>
+                                </ul>
+                                <div class="tags">
+                                    <span class="tag">HTML/CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">jQuery</span>
+                                    <span class="tag">Bootstrap</span>
+                                    <span class="tag">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
 
 
     <!-- Skills Section -->
@@ -530,6 +644,25 @@
 
         // Initial call
         updateGradientPosition();
+
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentElement;
+                const isActive = accordionItem.classList.contains('active');
+
+                // Close all accordion items
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    accordionItem.classList.add('active');
+                }
+            });
+        });
     </script>
 
 </body>
